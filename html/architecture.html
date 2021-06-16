@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture | Pixus</title>
+    <link rel="icon" href="../img/4/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/images.css">
+    <style>
+        #set1:hover, #set2:hover, #set3:hover, #set4:hover, #set5:hover, #set6:hover, #set7:hover, #set8:hover, #set9:hover, #set10:hover, #set11:hover, #set12:hover
+        {
+            cursor:pointer;
+        }
+        html
+        {
+            background-image: radial-gradient(farthest-corner at 40px 40px,
+            rgb(48, 56, 0) 0%, rgb(0, 0, 0) 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-top">
+        <h1 class="heading1" style="color:rgb(247, 247, 173);">ARCHITECTURE</h1>
+    </div>
+
+
+    <!-- Images used to open the lightbox -->
+    <div class="row">
+        <div id="set1" class="column">
+        <img src="../img/4/1.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div id="set2" class="column">
+        <img src="../img/4/2.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div id="set3" class="column">
+        <img src="../img/4/3.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div id="set4" class="column">
+        <img src="../img/4/4.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+        <div id="set5" class="column">
+        <img src="../img/4/5.jpeg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+        </div>
+        <div id="set6" class="column">
+        <img src="../img/4/6.jpeg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+        </div>
+        <div id="set7" class="column">
+        <img src="../img/4/7.jpeg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+        </div>
+        <div id="set8" class="column">
+        <img src="../img/4/8.jpeg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+        </div>
+        <div id="set9" class="column">
+        <img src="../img/4/9.jpeg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+        </div>
+        <div id="set10" class="column">
+        <img src="../img/4/10.jpeg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+        </div>
+        <div id="set11" class="column">
+        <img src="../img/4/11.jpeg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+        </div>
+        <div id="set12" class="column">
+        <img src="../img/4/12.jpeg" onclick="openModal();currentSlide(12)" class="hover-shadow">
+        </div>
+    </div>
+    
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content" style="width:80%;">
+    
+        <div class="mySlides">
+            <div class="numbertext">1 / 12</div>
+            <img class="img" src="../img/4/1.jpeg">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numbertext">2 / 12</div>
+            <img class="img" src="../img/4/2.jpeg">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numbertext">3 / 12</div>
+            <img class="img" src="../img/4/3.jpeg">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numbertext">4 / 12</div>
+            <img class="img" src="../img/4/4.jpeg">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numbertext">5 / 12</div>
+            <img class="img" src="../img/4/5.jpeg">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numbertext">6 / 12</div>
+            <img class="img" src="../img/4/6.jpeg">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numbertext">7 / 12</div>
+            <img class="img" src="../img/4/7.jpeg">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numbertext">8 / 12</div>
+            <img class="img" src="../img/4/8.jpeg">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numbertext">9 / 12</div>
+            <img class="img" src="../img/4/9.jpeg">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numbertext">10 / 12</div>
+            <img class="img" src="../img/4/10.jpeg">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numbertext">11 / 12</div>
+            <img class="img" src="../img/4/11.jpeg">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numbertext">12 / 12</div>
+            <img class="img" src="../img/4/12.jpeg">
+        </div>
+    
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <!-- Caption text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+    
+        <!-- Thumbnail image controls -->
+        <div class="column">
+            <img class="demo" src="../img/4/1.jpeg" onclick="currentSlide(1)" alt="1">
+        </div>
+    
+        <div class="column">
+            <img class="demo" src="../img/4/2.jpeg" onclick="currentSlide(2)" alt="2">
+        </div>
+    
+        <div class="column">
+            <img class="demo" src="../img/4/3.jpeg" onclick="currentSlide(3)" alt="3">
+        </div>
+    
+        <div class="column">
+            <img class="demo" src="../img/4/4.jpeg" onclick="currentSlide(4)" alt="4">
+        </div>
+    
+        <div class="column">
+            <img class="demo" src="../img/4/5.jpeg" onclick="currentSlide(5)" alt="5">
+        </div>
+    
+        <div class="column">
+            <img class="demo" src="../img/4/6.jpeg" onclick="currentSlide(6)" alt="6">
+        </div>
+    
+        <div class="column">
+            <img class="demo" src="../img/4/7.jpeg" onclick="currentSlide(7)" alt="7">
+        </div>
+    
+        <div class="column">
+            <img class="demo" src="../img/4/8.jpeg" onclick="currentSlide(8)" alt="8">
+        </div>
+    
+        <div class="column">
+            <img class="demo" src="../img/4/9.jpeg" onclick="currentSlide(9)" alt="9">
+        </div>
+    
+        <div class="column">
+            <img class="demo" src="../img/4/10.jpeg" onclick="currentSlide(10)" alt="10">
+        </div>
+    
+        <div class="column">
+            <img class="demo" src="../img/4/11.jpeg" onclick="currentSlide(11)" alt="11">
+        </div>
+    
+        <div class="column">
+            <img class="demo" src="../img/4/12.jpeg" onclick="currentSlide(12)" alt="12">
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+        // Open the Modal
+        function openModal() {
+        document.getElementById("myModal").style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+    </script>
+</body>
+</html>

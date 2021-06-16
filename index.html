@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixus</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        html
+        {
+            background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-top">
+        <h1 class="heading1" style="color: #ffffff;">GALLERY</h1>
+    </div>
+
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img class="img" src="img/1/1.jpg">
+    <div class="text">Space</div>
+    </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img class="img" src="img/2/1.jpeg">
+    <div class="text">Nature</div>
+    </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img class="img" src="img/3/1.jpeg">
+    <div class="text">Animals</div>
+    </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img class="img" src="img/4/1.jpeg">
+    <div class="text">Architecture</div>
+    </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img class="img" src="img/5/1.jpeg">
+    <div class="text">Abstract</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+
+
+    <div class="work-section" id="city_slider">
+        <div id="about" class="container padding-0">
+        <h2 class="same-head has-text-centered" style="font-size:30px;color:rgb(4, 84, 116);margin-top:50px;"><u>Categories</u></h2>
+        <div class="margin-30 padding-0 view-mobile bottom-0 msslider" style="margin-bottom: 30px;">
+        <div class="MS-content">
+
+        <div class="item" style="margin-top:7%;">
+        <a class="color-change" href="html/space.html">
+        <div class="dummy_vendor">
+        <div class="hover-img" style="height: 500px;">
+        <img class="lazyloaded" style="width:100%;height:600px;" src="img/1/1.jpg" alt="Space"></div>
+        <p class="has-text-centered">Space</p>
+        <div style="padding-bottom: 17px;margin-bottom: 2px;">
+        </div>
+        </div></a>
+        </div>
+
+        <div class="item" style="margin-top:7%;">
+        <a class="color-change" href="html/nature.html">
+        <div class="dummy_vendor">
+        <div class="hover-img" style="height: 500px;">
+        <img class="lazyloaded" style="width:100%;height:600px;" src="img/2/1.jpeg" alt="Nature"></div>
+        <p class="has-text-centered">Nature</p>
+        <div style="padding-bottom: 17px;margin-bottom: 2px;">
+        </div>
+        </div></a>
+        </div>
+
+        <div class="item" style="margin-top:7%;">
+        <a class="color-change" href="html/animal.html">
+        <div class="dummy_vendor">
+        <div class="hover-img" style="height: 500px;">
+        <img class="lazyloaded" style="width:100%;height:600px;" src="img/3/1.jpeg" alt="Animals"></div>
+        <p class="has-text-centered">Animals</p>
+        <div style="padding-bottom: 17px;margin-bottom: 2px;">
+        </div>
+        </div></a>
+        </div>
+
+        <div class="item" style="margin-top:7%;">
+        <a class="color-change" href="html/architecture.html">
+        <div class="dummy_vendor">
+        <div class="hover-img" style="height: 500px;">
+        <img class="lazyloaded" style="width:100%;height:600px;" src="img/4/1.jpeg" alt="Buildings"></div>
+        <p class="has-text-centered">Architecture</p>
+        <div style="padding-bottom: 17px;margin-bottom: 2px;">
+        </div>
+        </div></a>
+        </div>
+
+        
+        <div class="item" style="margin-top:7%;">
+        <a class="color-change" href="html/abstract.html">
+        <div class="dummy_vendor">
+        <div class="hover-img" style="height: 500px;">
+        <img class="lazyloaded" style="width:100%;height:600px;" src="img/5/1.jpeg" alt="Abstract"></div>
+        <p class="has-text-centered">Abstract</p>
+        <div style="padding-bottom: 17px;margin-bottom: 2px;">
+        </div>
+        </div></a>
+        </div>
+
+        
+        </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    }
+    </script>
+ 
+
+</body>
+</html>
